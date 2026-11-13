@@ -8,7 +8,7 @@ export function Contact() {
     { icon: Mail, label: 'roshxsam1972@gmail.com' },
     { icon: Phone, label: '+91 8056101495' },
     { icon: MapPin, label: 'Chennai, India' },
-    { icon: Linkedin, label: 'linkedin.com/in/roshan-samuel' },
+    { icon: Linkedin, label: 'Roshan Samuel LinkedIn', url: 'https://www.linkedin.com/in/roshansamuel1763' },
   ];
 
   return (
@@ -39,7 +39,18 @@ export function Contact() {
                     <div className="w-10 h-10 rounded-xl bg-indigo-500/10 flex items-center justify-center text-indigo-400">
                       <item.icon size={20} strokeWidth={2} />
                     </div>
-                    <span className="text-slate-300">{item.label}</span>
+                    {item.url ? (
+                      <a
+                        href={item.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-indigo-400 hover:text-indigo-300 transition-colors"
+                      >
+                        {item.label}
+                      </a>
+                    ) : (
+                      <span className="text-slate-300">{item.label}</span>
+                    )}
                   </motion.div>
                 ))}
               </div>
