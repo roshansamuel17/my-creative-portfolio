@@ -33,12 +33,14 @@ export function ProjectCard({ project }) {
         <p className="text-slate-400 text-sm mb-4">{project.description}</p>
         <div className="flex items-center gap-2">
           <span className="text-xl font-bold text-white">{project.results}</span>
-          <a
-            href={project.link}
-            className="ml-auto flex items-center gap-1.5 text-indigo-400 text-sm font-medium hover:text-indigo-300 transition-colors"
-          >
-            Case Study <ArrowRight size={16} strokeWidth={2} />
-          </a>
+          {project.id === '1' && (
+            <a
+              href={project.link}
+              className="ml-auto flex items-center gap-1.5 text-indigo-400 text-sm font-medium hover:text-indigo-300 transition-colors"
+            >
+              Case Study <ArrowRight size={16} strokeWidth={2} />
+            </a>
+          )}
         </div>
 
         {(project.instagram || project.website) && (
