@@ -6,7 +6,7 @@ export const projects = [
     image: 'https://images.unsplash.com/photo-1542281286-9e0a16bb7366?w=800&q=80',
     results: '€500K Media Plan',
     description: 'Local Irish sports retail store. Led PPC strategy with geo-targeting, negative keywords, and dynamic remarketing to maximise ROI. Collaborated on a €500K media plan, supported social media strategy and SEO audit, with recommendations projected 20%+ gains in visibility, engagement, and conversions.',
-    link: '/Rathmines-Sports-Marketing-Strategy.pdf',
+    link: 'https://drive.google.com/file/d/1koXfg3eouzwtGulyb3R92gZwgSBMv2tT/view?usp=sharing',
   },
   {
     id: '2',
