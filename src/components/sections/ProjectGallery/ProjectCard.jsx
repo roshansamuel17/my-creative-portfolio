@@ -4,7 +4,10 @@ import { ArrowRight, Instagram, Globe } from 'lucide-react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-gsap.registerPlugin(ScrollTrigger);
+// Only register plugin in browser environment
+if (typeof window !== 'undefined') {
+  gsap.registerPlugin(ScrollTrigger);
+}
 
 export function ProjectCard({ project, index }) {
   const cardRef = useRef(null);
