@@ -28,8 +28,8 @@ export function ProjectGallery() {
           animate={{ opacity: 1 }}
           className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
         >
-          {filtered.map((project) => (
-            <ProjectCard key={project.id} project={project} />
+          {filtered.map((project, index) => (
+            <ProjectCard key={project.id} project={project} index={index} />
           ))}
         </motion.div>
       </div>
