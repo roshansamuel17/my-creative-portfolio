@@ -1,34 +1,9 @@
 import { motion } from 'framer-motion';
-import { useEffect, useRef } from 'react';
 import { ArrowRight, Instagram, Globe } from 'lucide-react';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-// Only register plugin in browser environment
-if (typeof window !== 'undefined') {
-  gsap.registerPlugin(ScrollTrigger);
-}
 export function ProjectCard({ project, index }) {
-  const cardRef = useRef(null);
-
-  useEffect(() => {
-    gsap.from(cardRef.current, {
-      scrollTrigger: {
-        trigger: cardRef.current,
-        start: 'top 85%',
-        toggleActions: 'play none none reverse',
-      },
-      opacity: 0,
-      y: 60,
-      duration: 0.8,
-      delay: index * 0.15,
-      ease: 'power3.out',
-    });
-  }, [index]);
-
   return (
     <motion.div
-      ref={cardRef}
       layout
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}

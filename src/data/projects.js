@@ -38,3 +38,13 @@ export const projects = [
     link: '#',
   },
 ];
+{
+  id: '5',
+  title: 'My Edited Reel',
+  category: 'Video Editing',
+  image: '/assets/images/thumbnail.jpg',  // a still image from your video
+  video: 'https://drive.google.com/file/d/13_Qvr7WCNXosfdessOdPTthyGzDeX-DL/view?usp=drive_link',  // your video link
+  results: 'Edited short-form video',
+  description: 'Edit made for social media on CapCut',
+  link: '#',
+},
