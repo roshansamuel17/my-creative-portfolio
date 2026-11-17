@@ -47,4 +47,5 @@ export const projects = [
   results: 'Edited short-form video',
   description: 'Edit made for social media on CapCut',
   link: '#',
-},
+  },
+];
