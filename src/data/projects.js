@@ -37,8 +37,7 @@ export const projects = [
     description: 'Indian cement manufacturing company specialising in construction and infrastructure materials (Dec 2023 – Jan 2024). Maintained sub-dealer relationships through daily market visits, resolved queries, and pitched creative ideas for branding campaigns focused on competitor-market awareness.',
     link: '#',
   },
-];
-{
+  {
   id: '5',
   title: 'My Edited Reel',
   category: 'Video Editing',
